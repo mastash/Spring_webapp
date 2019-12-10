@@ -1,4 +1,9 @@
-package webapp.spring.webapp.repository;
+package webapp.spring.webapp.repositories;
 
-public class AuthorRepository {
+import org.springframework.data.repository.CrudRepository;
+import webapp.spring.webapp.model.Author;
+
+public interface AuthorRepository extends CrudRepository<Author, Long> {
+
+
 }
