@@ -35,8 +35,8 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         publisherRepository.save(publisher);
 
         Author mickiewicz = new Author("Adam", "Mickiewicz");
-        Author gombrowicz = new Author("radzio", "Gombrowicz");
-        Author iksinski = new Author("Adaś", "Miauczynski");
+        Author gombrowicz = new Author("Witold", "Gombrowicz");
+        Author orzeszkowa = new Author("Eliza", "Orzeszkowa");
 
 //        authorRepository.save(mickiewicz);
 //        authorRepository.save(gombrowicz);
@@ -57,8 +57,8 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         mickiewicz.getBooks().add(chlopi);
         chlopi.getAuthors().add(mickiewicz);
 
-        mickiewicz.getBooks().add(nadNiemnem);
-        nadNiemnem.getAuthors().add(mickiewicz);
+        orzeszkowa.getBooks().add(nadNiemnem);
+        nadNiemnem.getAuthors().add(orzeszkowa);
 
 
 
@@ -66,29 +66,29 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 
         authorRepository.save(mickiewicz);
         authorRepository.save(gombrowicz);
-        authorRepository.save(iksinski);
+        authorRepository.save(orzeszkowa);
         bookRepository.save(dziady);
         bookRepository.save(nadNiemnem);
         bookRepository.save(chlopi);
 
 
 
-        iksinski.getBooks().add(nadNiemnem);
-        nadNiemnem.getAuthors().add(iksinski);
-
-        gombrowicz.getBooks().add(nadNiemnem);
-        nadNiemnem.getAuthors().add(gombrowicz);
-
-        chlopi.getAuthors().add(gombrowicz);
-        gombrowicz.getBooks().add(chlopi);
-
-
-        authorRepository.save(mickiewicz);
-        authorRepository.save(gombrowicz);
-        authorRepository.save(iksinski);
-        bookRepository.save(dziady);
-        bookRepository.save(nadNiemnem);
-        bookRepository.save(chlopi);
+//        orzeszkowa.getBooks().add(nadNiemnem);
+//        nadNiemnem.getAuthors().add(orzeszkowa);
+//
+//        gombrowicz.getBooks().add(nadNiemnem);
+//        nadNiemnem.getAuthors().add(gombrowicz);
+//
+//        chlopi.getAuthors().add(gombrowicz);
+//        gombrowicz.getBooks().add(chlopi);
+//
+//
+//        authorRepository.save(mickiewicz);
+//        authorRepository.save(gombrowicz);
+//        authorRepository.save(iksinski);
+//        bookRepository.save(dziady);
+//        bookRepository.save(nadNiemnem);
+//        bookRepository.save(chlopi);
 
 
 
